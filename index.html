@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-BINAYAK HAZRA</title>
+    <style>
+        *{
+            margin:0px;
+            box-sizing: border-box;
+            padding:0px;
+        }
+
+        body{
+            background:linear-gradient(135deg, #667eea , #764ba2 );
+            font-family: Arial, Helvetica, sans-serif;
+            color:white;
+            line-height: 1.6;
+        }
+
+        #nav-bar{
+            background-color:rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content:space-between;
+            padding:20px 50px;
+            border-radius:20px;
+            align-items: center;
+            height:100px;
+            width:100%;
+            position:fixed;
+            z-index:100;
+            top:0;
+            backdrop-filter: blur(10px);
+            
+        }
+
+        #heading{
+            font-weight: bold;
+            font-size:30px;
+        }
+
+        #links{
+            display:flex;
+            gap:30px;
+        }
+
+        #links a{
+            text-decoration: none;
+            color:white;
+            font-weight: 600;
+        }
+
+        #Home{
+            margin-top:20px;
+            margin-left: 150px;
+            margin-right: 150px;
+            display:flex;
+            justify-content: center;
+            gap:200px;
+            height:100vh;
+            align-items: center;
+            border-radius:30px;
+           z-index:90;
+        }
+
+        #content{
+            display:flex;
+            flex-direction: column;
+            gap:20px;
+            width:500px;
+            text-wrap: wrap;
+        }
+        
+        #content header{
+            font-size:1.4rem;
+        }
+        span{
+            color:gold;
+        }
+
+        #content section{
+            font-size:1.1rem;
+        }
+
+        #content button{
+            width:150px;
+            height:50px;
+            padding:5px 8px;
+            border:none;
+            border-radius: 20px;
+            background:linear-gradient(45deg,#FF8A00, #E52E71);
+            font-weight: 580;
+            font-size:16px;
+            color:white;
+            cursor: pointer;
+
+        }
+
+        #photo img{
+            border-radius: 30px;
+        }
+
+        #About{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height:100vh;
+            /* margin-left:150px;
+            margin-right:150px; */
+            background: rgba(255, 255, 255, 0.05);
+            
+        }
+
+        #h-about header{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        #undeline{
+            height:10px;
+            width:150px;
+            background:linear-gradient(45deg,yellow,#FF8A00, #E52E71);
+        }
+
+        #c-about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            width:100%;
+            gap:100px;
+        }
+
+        #p-1, #p-2{
+            font-size: 1.3rem;
+            text-align: center;
+            width:85%;
+            flex-wrap: wrap;
+        }
+
+        #box-inner{
+            display: flex;
+            justify-content: space-between;
+            gap:100px;
+            text-align: center;
+        }
+
+        .title{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: gold;
+        }
+        .descrip{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .box{
+            background: rgba(255, 255, 255, 0.2);
+            padding:20px 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        #Projects, #Contact{
+            height:100vh;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="nav-bar">
+            <div id="heading">MyPortfolio</div>
+
+            <div id="links">
+                <div><a href="#Home">Home</a></div>
+                <div><a href="#About">About</a></div>
+                <div><a href="Skills">Skills</a></div>
+                <div><a href="#Projects">Projects</a></div>
+                <div><a href="Contact">Contact</a></div>
+            </div>
+
+        </div>
+
+        <div id="Home">
+            <div id="content">
+                <header>
+                    <h1>Hi, I'm <span>Binayak Hazra</span></h1>
+                </header>
+
+                <section>
+                    <p>
+                        A Fontend Developer explorng the world of design and open-source. Turning ideas into 
+                        interactive, user-friendly web experiences.
+                    </p>
+                </section>
+
+                <button type="submit">
+                    View My Work
+                </button>
+
+            </div>
+
+            <div id="photo">
+                <img src="./image.png" alt="Binayak Hazra" height="300px" width="280px"/>
+            </div>
+        </div>
+        
+        <div id="About">
+            <div id="h-about">
+                <header>
+                    About Me
+                </header>
+
+                
+            </div>
+            
+            <div id="undeline">
+                    <div id="line"></div>
+                </div>
+            
+
+            <div id="c-about">
+                <div id="p-1">
+                    <p>
+                        I'm a creative and detail-oriented web developer with a passion for 
+                        building modern, responsive, and user-friendly web applications.
+                        I love transforming ideas into digital experiences that are both
+                        visually appealing and highly functional.
+                    </p>
+                </div>
+
+                <div id="p-2">
+                    <p>
+                        Beyound coding, I enjoy exploring new technologies, 
+                        contributing to open-source projects, and continuously
+                        improving my problem-solving skills.
+                    </p>
+                </div>
+
+                <div id="box-inner">
+                    <div id="pro-no" class="box">
+                        <div class="title">20+</div>
+                        <div class="descrip">Projects Completed</div>
+                    </div>
+
+                    <div id="exp-no" class="box">
+                        <div class="title">4+</div>
+                        <div class="descrip">Years of Experience</div>
+
+                    </div>
+
+                    <div id="tech-ms" class="box">
+                        <div class="title">10+</div>
+                        <div class="descrip">Technologies Mastered</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div id="Projects">
+            Projects
+        </div>
+
+        <div id="Contact">
+            Contact
+        </div>
+            
+    </div>
+</body>
+</html>
