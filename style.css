@@ -101,12 +101,12 @@ span {
   background: rgba(255, 255, 255, 0.05);
 }
 
-#h-about header {
+#h-about header, #proj-head {
   font-size: 3rem;
   font-weight: bold;
   margin-top: 50px;
 }
-.undeline,#line-2 {
+.undeline,#line-2,#proj-underline,#line-3 {
   height: 10px;
   width: 150px;
   background: linear-gradient(45deg, yellow, #ff8a00, #e52e71);
@@ -277,8 +277,86 @@ span {
     }
 }
 
-#Projects,#Contact{
+#Projects{
     height:100vh;
+    width:100vw;
+
+    display:flex;
+    flex-direction: column;
+
+    gap:10px;
+    align-items: center;
+    padding:10px;
+
+    background: rgba(255, 255, 255, 0.05);
 }
 
+#proj-content{
+  display:flex;
+  
+  flex-direction: row;
+  justify-content: space-around;
+  gap:20px;
+  
+}
 
+.s-photo{
+  height:300px;
+  width:470px;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.s-photo img{
+  height:100%;
+  width:100%;
+  transition: transform 0.3s ease;
+  
+}
+
+#e-com,#portfolio,#w-app{
+ background: rgba(255, 255, 255, 0.2);
+ border-radius: 20px;
+ transition:box-shadow 0.3s ease;
+}
+
+.card{
+  overflow:hidden;
+}
+
+.mypr-content{
+  padding:20px;
+
+}
+
+#proj-content span{
+  border-radius:10px;
+  border:rgba(255, 255, 255, 0.2) solid 1px ;
+  color:white;
+  padding:5px;
+  margin:3px;
+
+
+  background: rgba(255, 255, 255, 0.2);
+
+}
+.mypr-content h3{
+  color:yellow;
+  font-weight: bold;
+}
+
+.mypr-content p{
+  opacity: 0.5;
+  padding:5px;
+}
+.card:hover{
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .s-photo img{
+  transform: scale(1.1);
+}
+
+.tag-pro{
+  margin:5px;
+}
