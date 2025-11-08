@@ -106,7 +106,7 @@ span {
   font-weight: bold;
   margin-top: 50px;
 }
-.undeline,#line-2,#proj-underline,#line-3 {
+.undeline,#line-2,#proj-underline,#line-3,.line-c,.line-cont {
   height: 10px;
   width: 150px;
   background: linear-gradient(45deg, yellow, #ff8a00, #e52e71);
@@ -366,4 +366,131 @@ span {
 
 #proj-underline{
   margin-bottom:25px;
+}
+
+#Contact{
+  height:100vh;
+  width:100vw;
+
+  display:flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+#Contact header{
+  font-size:3rem;
+  font-weight: bold;
+  margin-top:50px;
+
+}
+.content-cont{
+  margin-top:60px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap:100px;
+
+}
+
+.cont-card{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap:5px;
+}
+
+.cont-card h3{
+  font-size: 1.4rem;
+  color:gold;
+}
+
+.cont-card a{
+  color:white;
+}
+
+#mail-logo, #call-logo, #loca-logo{
+  height:45px;
+  width:45px;
+  padding:3px;
+  background-color:  rgba(255, 255, 255, 0.2);
+  border: rgba(255, 255, 255, 0.2) solid 0.1px;
+  border-radius:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-img{
+  height:30px;
+  width:18px;
+}
+
+#mail-logo img{
+  height:25px;
+  width:35px;
+}
+
+.contact-d{
+  display:flex;
+  flex-direction: column;
+  gap:50px;
+}
+
+.cont-form{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  border-radius:10px;
+}
+
+.cont-form input{
+  height: 40px;
+  width:300px;
+  margin:10px;
+  border-radius:10px;
+  outline:none;
+  border:black solid 1px;
+}
+
+.cont-form input::placeholder{
+  font-size: 16px;
+  padding:5px;
+}
+
+.cont-form textarea::placeholder{
+  font-size:16px;
+  padding:5px;
+}
+
+#message textarea{
+  height:80px;
+  margin:10px;
+  border-radius: 10px;
+  outline:none;
+  border:black solid 1px;
+
+}
+
+.cont-form button{
+  height:50px;
+  width:150px;
+
+  margin:10px;
+  border:none;
+  border-radius: 20px;
+
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  font-weight: 580;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  padding:10px;
 }
